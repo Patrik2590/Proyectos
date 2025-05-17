@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de mí - Patricio Remache</title>
+  <!-- Enlace a la hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="titulo_principal"><h1>BIENBENIDO A MI PERFIL</h1></div>
+
+  <div class="contenedor_principal">
+    
+    <div class="fondo">
+        <img src="REMACHE_CUELLO_JAIRO_PATRICIO_FOTO.jpg" alt="Foto de Patricio Remache" id="fotoPerfil" />
+    </div>
+   
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Sección de perfil -->
+    <div class="profile">
+      <!-- Imagen de perfil con animación -->
+
+      <img src="fondo2.png" alt=" fondo_paginaCv" id="fotoFondoPagina" />  
+      <!-- Nombre y descripción -->
+      <h1>Patricio Remache</h1>
+      <p> Tecnólogo Superior en Desarrollo de Software <br> <br> <h4>conosimientos en:</h4>
+        |  Desarrollo de software | Diseño Web | | Ciberseguridad |</p>
+
+      <!-- Botón para ver el CV -->
+      <button id="mostrarCV">Ver mi CV</button>
+
+      <!-- Enlace a la página de información personal -->
+      <a href="info.html" class="btn-info">Más sobre mí</a>
+
+      <!-- Enlaces a redes sociales -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/jairo-patricio-remache-cuello-7bb7822b5" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal oculto con el PDF del CV -->
+  <div id="cvModal" class="modal">
+    <div class="modal-content">
+      <!-- Botón para cerrar el modal -->
+      <span class="cerrar">&times;</span>
+      <!-- Iframe que muestra el CV PDF -->
+      <iframe src="docs/curriculum vitae patricio remache_ 2025.pdf" width="100%" height="500px"></iframe>
+    </div>
+  </div>
+</div>
+  <!-- Script de funcionalidades -->
+  <script src="script.js"></script>
+</body>
+</html>

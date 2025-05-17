@@ -1,0 +1,194 @@
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #fcfcfc, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ /* estilo del titulo principal*/
+ .titulo_principal {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #FAF0E6, #FAEBD7);
+    color: #1E90FF;
+    text-align: center;
+    font-size: 28px;
+  
+}
+   
+
+/* Contenedor principal */
+.contenedor_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Imagen de fondo */
+.fondo img {
+     border-radius: 50%;
+  display: flex;
+    position:relative;
+  padding:flex;
+    width: 150%;
+    max-width: 500px;
+    height: 150%;
+    max-height: 500px;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background: rgba(192,192,192,0.0.5);
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    animation: slideUp 1s ease-out;
+}
+
+/* Imagen de perfil */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Título del nombre */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+/* Botón para ver el CV */
+button {
+    display: inline-block;
+    padding: 47px 26px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f30303;
+}
+
+/* Enlaces a redes sociales */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0078D7;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0c22e7;
+}
+
+/* Animación flotante */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Animación de entrada */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo del modal para el CV */
+.modal {
+    display: none;
+    position: center;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+/* Botón de cierre del modal */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Botón para navegar entre páginas */
+.btn-info {
+    display: inline-block;
+    margin-top:10px;
+    padding: 46px 8px;
+    background-color: #00CED1;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #00FFFF;
+}
+
+/* Lista de datos personales */
+.profile-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 18px;
+}
+
+.info-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
