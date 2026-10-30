@@ -147,10 +147,11 @@ body::before {
   gap: 12px; 
   justify-content: center; 
   margin-bottom: 20px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
-  .botones-accion { justify-content: flex-start; } }
+  .botones-accion { justify-content: flex-start; } 
+}
 .btn {
   padding: 10px 20px; border-radius: 8px; font-weight: 600; border: none;
   cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
@@ -236,3 +237,16 @@ body::before {
 .hero-section { animation-delay: 0.1s; }
 .stack-section { animation-delay: 0.2s; }
 .experience-section { animation-delay: 0.3s; }
+
+/* Ajustes específicos para teléfonos móviles */
+@media (max-width: 480px) {
+  .botones-accion {
+    gap: 10px;
+  }
+  .botones-accion .btn {
+    flex: 1 1 45%; 
+    justify-content: center;
+    font-size: 0.9rem; 
+    padding: 10px 15px;
+  }
+}
