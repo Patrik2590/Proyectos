@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Información Personal - Patricio Remache</title>
   <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Contenedor principal de la página -->
-  <div class="container">
-    <div class="profile-info">
-      <h1>Información Personal</h1>
 
-      <!-- Lista con datos personales -->
-      <ul class="info-list">
-        <li><strong>Nombre completo:</strong> Jairo Patricio Remache Cuello </li>
-        <li><strong>Correo electrónico:</strong> patrik-remache@hotmail.com</li>
-        <li><strong>Teléfono:</strong> +593 987 284 889</li>
-        <li><strong>Dirección:</strong> Tababela - Oyambarillo, Quito - Ecuador</li>
-        <li><strong>Formación:</strong> Tecnólogo Superior en Desarrollo de Software</li>
-        <li><strong>Idiomas:</strong> Español (nativo), Inglés (basico)</li>
-        <li><strong>Habilidades:</strong> conocimiento basicos HTML, CSS, JavaScript, Java, MySQL, Git</li>
-        <li><strong>Pasatiempos:</strong> Lectura, programación, diseño web, ciberseguridad</li>
-      </ul>
-
-      <!-- Botón para volver a la página principal -->
-      <a href="index.html" class="btn-info">← Volver al inicio</a>
+  <!-- Navbar reutilizada para coherencia y botón Dark Mode -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <span class="logo">&lt;PR /&gt;</span>
+      <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </div>
-  </div>
+  </nav>
+
+  <main class="contenedor-principal">
+    <div class="card-info">
+      
+      <h2><i class="fa-solid fa-id-card"></i> Información Personal & Profesional</h2>
+
+      <div class="seccion-info">
+        <h3><i class="fa-solid fa-envelope"></i> Datos de Contacto</h3>
+        <ul class="info-list">
+          <li><strong>Nombre completo:</strong> Jairo Patricio Remache Cuello</li>
+          <li><strong>Correo electrónico:</strong> patrik-remache@hotmail.com</li>
+          <li><strong>Teléfonos:</strong> +593 987 284 889 / +593 967 440 970</li>
+          <li><strong>Ubicación:</strong> San Luis de Guachalá - Cayambe, Ecuador</li>
+          <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Básico)</li>
+        </ul>
+      </div>
+
+      <div class="seccion-info">
+        <h3><i class="fa-solid fa-user-gear"></i> Resumen Profesional</h3>
+        <p class="texto-resumen">
+          Tecnólogo en Desarrollo de Software apasionado por el soporte técnico y la resolución de problemas en infraestructura tecnológica. Experiencia sólida en soporte a usuarios, administración de entornos Windows, Microsoft 365, mantenimiento de redes, servidores y cumplimiento de normativas de seguridad de la información (ISO 27001 y BASC).
+        </p>
+      </div>
+
+      <div class="seccion-info">
+        <h3><i class="fa-solid fa-laptop-code"></i> Habilidades Técnicas</h3>
+        <ul class="info-list">
+          <li><strong>Soporte & Mantenimiento:</strong> Diagnóstico y reparación de hardware, atención remota y presencial.</li>
+          <li><strong>Sistemas & Redes:</strong> Entornos Windows, Microsoft 365, cableado estructurado y cuartos de servidores.</li>
+          <li><strong>Gestión & Seguridad:</strong> Auditoría interna ISO 27001, normativas BASC e inventario de activos TI.</li>
+          <li><strong>Desarrollo:</strong> HTML, CSS, JavaScript, C#, MySQL, Git.</li>
+        </ul>
+      </div>
+
+      <div class="seccion-info">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Educación y Certificaciones</h3>
+        <ul class="info-list">
+          <li><strong>Tecnología Superior en Desarrollo de Software:</strong> Instituto Tecnológico Superior Nelson Torres.</li>
+          <li><strong>Auditor Interno ISO 27001:</strong> Hacker Mentor.</li>
+          <li><strong>Introducción a la Ciberseguridad:</strong> Cisco Networking Academy.</li>
+        </ul>
+      </div>
+
+      <div class="botones-accion" style="margin-top: 30px;">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

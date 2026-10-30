@@ -1,59 +1,156 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acerca de mí - Patricio Remache</title>
-  <!-- Enlace a la hoja de estilos -->
+  <title>Patricio Remache | Desarrollador .NET & Soporte TI</title>
   <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <div class="titulo_principal"><h1>BIENVENIDO A MI PERFIL</h1></div>
 
-  <div class="contenedor_principal">
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <span class="logo">&lt;PR /&gt;</span>
+      <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="contenedor-principal">
     
-    <div class="fondo">
-        <img src="REMACHE_CUELLO_JAIRO_PATRICIO_FOTO.jpg" alt="Foto de Patricio Remache" id="fotoPerfil" />
-    </div>
-   
-  <!-- Contenedor principal -->
-  <div class="container">
-    <!-- Sección de perfil -->
-    <div class="profile">
-      <!-- Imagen de perfil con animación -->
+    <!-- Hero: Presentación Dual -->
+    <section class="card-section hero-section">
+      <div class="hero-content">
+        <div class="avatar-container">
+          <img src="FOTO PR.jpg" alt="Patricio Remache" class="foto-perfil" />
+        </div>
+        
+        <div class="info-hero">
+          <h1>Jairo Patricio Remache</h1>
+          <!-- Efecto Typing implementado aquí -->
+          <h2><span class="rol-principal" id="typing-text"></span><span class="cursor">|</span></h2>
+          <p class="bio">
+            Perfil tecnológico híbrido con experiencia en desarrollo de software (ecosistema .NET) y administración de infraestructura TI. Combinando código limpio con redes estables y seguridad corporativa para ofrecer soluciones integrales.
+          </p>
+          
+          <div class="botones-accion">
+            <!-- Botón CV -->
+            <button id="mostrarCV" class="btn btn-primary" style="white-space: nowrap;">
+              <i class="fa-solid fa-file-pdf"></i> Ver CV
+            </button>
+            
+            <!-- Botón Más Info (Texto corto y sin salto de línea) -->
+            <a href="info.html" class="btn btn-secondary" style="border: 1px solid var(--primary); white-space: nowrap;">
+              <i class="fa-solid fa-circle-info" style="color: var(--primary);"></i> Más Info
+            </a>
 
-      <img src="fondo2.png" alt=" fondo_paginaCv" id="fotoFondoPagina" />  
-      <!-- Nombre y descripción -->
-      <h1>Patricio Remache</h1>
-      <p> Tecnólogo Superior en Desarrollo de Software <br> <br> <h4>conosimientos en:</h4>
-        |  Desarrollo de software | Diseño Web | | Ciberseguridad |</p>
+            <!-- Botón WhatsApp -->
+            <a href="https://wa.me/593987284889?text=Hola%20Patricio..." target="_blank" class="btn btn-secondary" style="color: #25D366; border-color: #25D366; white-space: nowrap;">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
 
-      <!-- Botón para ver el CV -->
-      <button id="mostrarCV">Ver mi CV</button>
+            <!-- Botón Correo -->
+            <button id="btnCorreo" class="btn btn-secondary" style="white-space: nowrap;">
+              <i class="fa-solid fa-envelope"></i> Copiar Correo
+            </button>
+          </div>
 
-      <!-- Enlace a la página de información personal -->
-      <a href="info.html" class="btn-info">Más sobre mí</a>
-
-      <!-- Enlaces a redes sociales -->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/jairo-patricio-remache-cuello-7bb7822b5" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Patrik2590/patrik2590" target="_blank">GitHub</a>
- 
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jairo-patricio-remache-cuello-7bb7822b5" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Patrik2590" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Modal oculto con el PDF del CV -->
+    <!-- Stack Tecnológico -->
+    <section class="card-section stack-section">
+      <h3 class="section-title"><i class="fa-solid fa-microchip"></i> Competencias Técnicas</h3>
+      <div class="tech-grid">
+        
+        <div class="tech-category">
+          <h4><i class="fa-solid fa-code"></i> Desarrollo Software</h4>
+          <div class="skills-tags">
+            <span>C# & .NET Core</span>
+            <span>ASP.NET MVC</span>
+            <span>SQL Server & MySQL</span>
+            <span>Entity Framework</span>
+            <span>JavaScript & Bootstrap 5</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4><i class="fa-solid fa-server"></i> Infraestructura & Soporte</h4>
+          <div class="skills-tags">
+            <span>Windows Server</span>
+            <span>Redes & Conectividad</span>
+            <span>Mantenimiento Preventivo</span>
+            <span>Microsoft 365</span>
+            <span>Help Desk</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4><i class="fa-solid fa-shield-halved"></i> Seguridad & Gestión</h4>
+          <div class="skills-tags">
+            <span>Auditoría ISO 27001</span>
+            <span>Normativa BASC</span>
+            <span>Gestión de Inventarios</span>
+            <span>Logística Operativa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia y Proyectos (Timeline) -->
+    <section class="card-section experience-section">
+      <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Experiencia & Proyectos Destacados</h3>
+      
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h4>Especialista en Soporte Técnico TI</h4>
+            <span class="badge">Actualidad</span>
+          </div>
+          <p class="empresa">Consultoría TI Externa (Monterosas)</p>
+          <p class="descripcion">Atención diaria de incidencias de usuarios (Help Desk), mantenimiento de equipos, configuración de redes y administración de sistemas Windows. Aseguramiento de seguridad de la información bajo certificación BASC.</p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h4>Proyecto: ERP ITSolutions</h4>
+            <span class="badge badge-dev">Desarrollo Propio</span>
+          </div>
+          <p class="empresa">Ecosistema .NET / Arquitectura Empresarial</p>
+          <p class="descripcion">Desarrollo integral de un sistema ERP. Creación de módulos escalables para gestión empresarial aplicando buenas prácticas MVC, Entity Framework y optimización de consultas en SQL Server.</p>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h4>Desarrollador Junior .NET</h4>
+            <span class="badge">Completado</span>
+          </div>
+          <p class="empresa">ZurcaloSoft</p>
+          <p class="descripcion">Desarrollo de componentes para aplicaciones empresariales en C# y gestión de bases de datos. Esta experiencia potenció mi agilidad lógica para resolver incidencias a nivel de software en mi rol de soporte actual.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal del CV PDF -->
   <div id="cvModal" class="modal">
     <div class="modal-content">
-      <!-- Botón para cerrar el modal -->
-      <span class="cerrar">&times;</span>
-      <!-- Iframe que muestra el CV PDF -->
-      <iframe src="docs/curriculum vitae patricio remache_ 2025.pdf" width="100%" height="500px"></iframe>
+      <div class="modal-header">
+        <h3>Curriculum Vitae</h3>
+        <button class="cerrar" aria-label="Cerrar modal">&times;</button>
+      </div>
+      <iframe src="docs/CV_Patricio_Remache_2026.pdf" class="iframe-cv"></iframe>
     </div>
   </div>
-</div>
-  <!-- Script de funcionalidades -->
+
   <script src="script.js"></script>
 </body>
 </html>
